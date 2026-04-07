@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "phylometa"
+version = "0.1.0"
+description = "A lightweight toolkit for testing associations between phylogenetic trees and sample metadata"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [
+  { name = "Inwoo Baek" }
+]
+license = { text = "MIT" }
+dependencies = [
+  "pandas>=2.0",
+  "numpy>=1.24",
+  "scipy>=1.10",
+  "matplotlib>=3.7",
+  "biopython>=1.81",
+]
+
+[project.scripts]
+phylometa = "phylometa.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
