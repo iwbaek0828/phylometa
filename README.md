@@ -16,7 +16,7 @@ It is designed for comparative genomics and phylogenomics workflows where users 
 ## Installation
 
 ```bash
-pip install -e .
+pip install phylometa
 ```
 
 ## Input formats
